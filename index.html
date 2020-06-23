@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dieptestaat</title>
+
+    <style>
+    #map {
+        width: 100vw;
+        height: 100vh;
+    }
+    .leaflet-marker-icon {
+        filter: drop-shadow(0px 0px 2px #000);
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script>
+
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+  <script>
+
+var brt = L.tileLayer('https://geodata.nationaalgeoregister.nl/tiles/service/wmts/brtachtergrondkaart/EPSG:3857/{z}/{x}/{y}.png');
+
+var foto = L.tileLayer('https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/wmts/Actueel_ortho25/EPSG:3857/{z}/{x}/{y}.png');
+
+var flytovector = L.tileLayer('https://viewer.flytomap.com/ftm_tiles/{z}/{x}/{y}.png');
+
+var map = L.map('map', {
+  center: [52, 4.5],
+  zoom: 6,
+  layers: [brt],
+  zoomSnap: 0.5
+});
+
+var geonames = L.tileLayer.wms('https://inspire.caris.nl/geoserver/gnwms/ows?',
+  {layers: 'GN.GeographicalNames',
+format: 'image/PNG',
+transparent: true
+}).addTo(map);
+
+var OpenSeaMap = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png').addTo(map);
+
+
+var baseMaps = {
+  "Foto": foto,
+  "Kaart": brt,
+  "Nav": flytovector
+  };
+
+var overlayMaps = {
+  "Geographical names": geonames,
+      "OpenSeaMap": OpenSeaMap
+};
+
+
+var control = L.control.layers(baseMaps, overlayMaps, {position: 'topleft'}).addTo(map);
+
+// usericons: https://gofile.io/d/WphdsC
+// dieptestaat: https://gofile.io/d/9MgRKn
+// no symbols: https://srv-file4.gofile.io/download/jWtTi3/DieptestaatLayerNAP-nosym.gpx
+var depthIcons = 'https://github.com/opendepth/dieptestaat/raw/master/UserIconsDepth/depth_'
+var dryIcons = 'https://github.com/opendepth/dieptestaat/raw/master/UserIconsDepth/dry_'
+var gpxUpload = 'https://srv-file5.gofile.io/download/9MgRKn/DieptestaatLayerNAP_original.gpx'
+var gpxNautinNap = 'http://nautin.nl/downloads/opencpn/layers/NautinDieptesNAP.gpx'
+var gpxNautinNapCopy = 'https://github.com/opendepth/dieptestaat/raw/master/data/NautinDieptesNAP.gpx'
+var gpxNautinLatCopy = 'https://github.com/opendepth/dieptestaat/raw/master/data/NautinDieptesLAT.gpx'
+
+var icons = {
+    '': 'https://unpkg.com/leaflet@1.6.0/dist/images/marker-icon.png',
+    'depth_0-0': depthIcons + '0-0'+ '.png',
+    'depth_0-1': depthIcons + '0-1'+ '.png',
+    'depth_0-2': depthIcons + '0-2'+ '.png',
+    'depth_0-3': depthIcons + '0-3'+ '.png',
+    'depth_0-4': depthIcons + '0-4'+ '.png',
+    'depth_0-5': depthIcons + '0-5'+ '.png',
+    'depth_0-6': depthIcons + '0-6'+ '.png',
+    'depth_0-7': depthIcons + '0-7'+ '.png',
+    'depth_0-8': depthIcons + '0-8'+ '.png',
+    'depth_0-9': depthIcons + '0-9'+ '.png',
+    'depth_1-0': depthIcons + '1-0'+ '.png',
+    'depth_1-1': depthIcons + '1-1'+ '.png',
+    'depth_1-2': depthIcons + '1-2'+ '.png',
+    'depth_1-3': depthIcons + '1-3'+ '.png',
+    'depth_1-4': depthIcons + '1-4'+ '.png',
+    'depth_1-5': depthIcons + '1-5'+ '.png',
+    'depth_1-6': depthIcons + '1-6'+ '.png',
+    'depth_1-7': depthIcons + '1-7'+ '.png',
+    'depth_1-8': depthIcons + '1-8'+ '.png',
+    'depth_1-9': depthIcons + '1-9'+ '.png',
+    'depth_2-0': depthIcons + '2-0'+ '.png',
+    'depth_2-1': depthIcons + '2-1'+ '.png',
+    'depth_2-2': depthIcons + '2-2'+ '.png',
+    'depth_2-3': depthIcons + '2-3'+ '.png',
+    'depth_2-4': depthIcons + '2-4'+ '.png',
+    'depth_2-5': depthIcons + '2-5'+ '.png',
+    'depth_2-6': depthIcons + '2-6'+ '.png',
+    'depth_2-7': depthIcons + '2-7'+ '.png',
+    'depth_2-8': depthIcons + '2-8'+ '.png',
+    'depth_2-9': depthIcons + '2-9'+ '.png',
+    'depth_3-0': depthIcons + '3-0'+ '.png',
+    'depth_3-1': depthIcons + '3-1'+ '.png',
+    'depth_3-2': depthIcons + '3-2'+ '.png',
+    'depth_3-3': depthIcons + '3-3'+ '.png',
+    'depth_3-4': depthIcons + '3-4'+ '.png',
+    'depth_3-5': depthIcons + '3-5'+ '.png',
+    'depth_3-6': depthIcons + '3-6'+ '.png',
+    'depth_3-7': depthIcons + '3-7'+ '.png',
+    'depth_3-8': depthIcons + '3-8'+ '.png',
+    'depth_3-9': depthIcons + '3-9'+ '.png',
+    'dry_0-0': dryIcons + '0-0' + '.png',
+    'dry_0-1': dryIcons + '0-1' + '.png',
+    'dry_0-2': dryIcons + '0-2' + '.png',
+    'dry_0-3': dryIcons + '0-3' + '.png',
+    'dry_0-4': dryIcons + '0-4' + '.png',
+    'dry_0-5': dryIcons + '0-5' + '.png',
+    'dry_0-6': dryIcons + '0-6' + '.png',
+    'dry_0-7': dryIcons + '0-7' + '.png',
+    'dry_0-8': dryIcons + '0-8' + '.png',
+    'dry_0-9': dryIcons + '0-9' + '.png',
+    'dry_1-0': dryIcons + '1-0' + '.png',
+    'dry_1-1': dryIcons + '1-1' + '.png',
+    'dry_1-2': dryIcons + '1-2' + '.png',
+    'dry_1-3': dryIcons + '1-3' + '.png',
+    'dry_1-4': dryIcons + '1-4' + '.png',
+    'dry_1-5': dryIcons + '1-5' + '.png',
+    'dry_1-6': dryIcons + '1-6' + '.png',
+    'dry_1-7': dryIcons + '1-7' + '.png',
+    'dry_1-8': dryIcons + '1-8' + '.png',
+    'dry_1-9': dryIcons + '1-9' + '.png',
+    'dry_2-0': dryIcons + '2-0' + '.png',
+    'dry_2-1': dryIcons + '2-1' + '.png',
+    'dry_2-2': dryIcons + '2-2' + '.png',
+    'dry_2-3': dryIcons + '2-3' + '.png',
+    'dry_2-4': dryIcons + '2-4' + '.png',
+    'dry_2-5': dryIcons + '2-5' + '.png',
+    'dry_2-6': dryIcons + '2-6' + '.png',
+    'dry_2-7': dryIcons + '2-7' + '.png',
+    'dry_2-8': dryIcons + '2-8' + '.png',
+    'dry_2-9': dryIcons + '2-9' + '.png'
+}
+
+new L.GPX(gpxNautinNapCopy, {
+        async: true,
+        marker_options: {
+            wptIconUrls: icons
+        }}).on('loaded', function(e) {
+            map.fitBounds(e.target.getBounds(), {padding: [50,50]});
+            control.addOverlay(e.target, 'Dieptestaat NAP');
+}).addTo(map);
+
+new L.GPX(gpxNautinLatCopy, {
+        async: true,
+        marker_options: {
+            wptIconUrls: icons
+        }}).on('loaded', function(e) {
+            map.fitBounds(e.target.getBounds(), {padding: [50,50]});
+            control.addOverlay(e.target, 'Dieptestaat LAT');
+});
+
+// ,
+//        shadowUrl: 'http://github.com/mpetazzoni/leaflet-gpx/raw/master/pin-shadow.png'
+  </script>
+</html>
