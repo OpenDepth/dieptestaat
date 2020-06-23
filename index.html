@@ -154,8 +154,7 @@ new L.GPX(gpxNautinNapCopy, {
         async: true,
         marker_options: {
             wptIconUrls: icons
-        },
-        shadowUrl: 'https://upload.wikimedia.org/wikipedia/commons/d/d2/Blank.png'}).on('loaded', function(e) {
+        }}).on('loaded', function(e) {
             map.fitBounds(e.target.getBounds(), {padding: [50,50]});
             control.addOverlay(e.target, 'Dieptestaat NAP');
 }).addTo(map);
