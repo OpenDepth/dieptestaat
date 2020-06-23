@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="OpenCPN" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xmlns:gpxx="http://www.garmin.com/xmlschemas/GpxExtensions/v3" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" xmlns:opencpn="http://www.opencpn.org">
+
+<wpt lat="53.133733333" lon="5.029908333">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Binnen Breesem  Van de BR22 naar de car.FD-BR</desc>  <sym>dry_0-7</sym> </wpt>
+<wpt lat="53.416693333" lon="5.593916667">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Blauwe Balg  tussen de BB4 en de BB10</desc>  <sym>dry_0-5</sym> </wpt>
+<wpt lat="53.1646" lon="5.3888">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Boontjes  drempel ter hoogte van de BO39,  MV = 40</desc>  <sym>depth_2-4</sym> </wpt>
+<wpt lat="53.493403333" lon="6.512406667">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Boswad  BW10 naar BW12</desc>  <sym>dry_1-4</sym> </wpt>
+<wpt lat="53.452763333" lon="6.350308333">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Eilanderbalg  van EB10 naar de EB15</desc>  <sym>dry_1-5</sym> </wpt>
+<wpt lat="53.265703333" lon="5.122966667">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Fransche Gaatje  Langs de stokken tot VBSB4</desc>  <sym>dry_0-8</sym> </wpt>
+<wpt lat="53.442903333" lon="5.958178333">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Holwerderbalg  van de HB7 naar HB13</desc>  <sym>dry_0-4</sym> </wpt>
+<wpt lat="53.421348333" lon="5.991055">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Frieschewad  van FW13 naar WW1</desc>  <sym>dry_0-2</sym> </wpt>
+<wpt lat="53.435876667" lon="6.195123333">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Geul van Brakzand  van de BZ 7 naar de BZ 11</desc>  <sym>dry_1-1</sym> </wpt>
+<wpt lat="53.439638333" lon="6.120585">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Gat van Schiermonnikoog  tussen de GvS2A en GvS4</desc>  <sym>dry_0-4</sym> </wpt>
+<wpt lat="53.43108" lon="6.30537">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Groningerbalg  GB12 - LWA1</desc>  <sym>dry_0-7</sym> </wpt>
+<wpt lat="53.170005" lon="5.179605">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Inschot  van de SO51 naar de IN17</desc>  <sym>depth_1-0</sym> </wpt>
+<wpt lat="53.290921667" lon="5.51915">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Kimstergat       van de K28 naar V11A-K40</desc>  <sym>dry_1-2</sym> </wpt>
+<wpt lat="53.42877" lon="5.753443333">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Kikkertgat    tussen KG10 - KG12</desc>  <sym>dry_0-4</sym> </wpt>
+<wpt lat="53.37517" lon="5.616406667">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Kromme Balg        van de KB7 naar de KB9</desc>  <sym>dry_0-2</sym> </wpt>
+<wpt lat="53.439395" lon="6.37767">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Lutjewad (Hornhuizerwad)  WANTIJ (LW28 naar LW38)</desc>  <sym>dry_1-3</sym> </wpt>
+<wpt lat="53.140201667" lon="5.253878333">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Molenrak     van de MR1/ZR 22 naar de MR 5</desc>  <sym>dry_0-2</sym> </wpt>
+<wpt lat="53.448931667" lon="6.575326667">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Noordpolderzijl (vaarwater naar)  zie opmerking hieronder</desc>  <sym>dry_1-6</sym> </wpt>
+<wpt lat="53.432987315" lon="6.282780744">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Oort     O19</desc>  <sym>dry_1-3</sym> </wpt>
+<wpt lat="53.360986667" lon="5.37451">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Oosterom bij O20  van de O18 naar de O 20 (WANTIJ)</desc>  <sym>depth_0-1</sym> </wpt>
+<wpt lat="53.386825" lon="5.470341667">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Oosterom bij O48-O56  van de O 46 naar O 54 (WANTIJ)</desc>  <sym>dry_0-3</sym> </wpt>
+<wpt lat="53.426583333" lon="6.06007">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Paesenrede  PR1</desc>  <sym>dry_0-0</sym> </wpt>
+<wpt lat="53.459313333" lon="6.452018333">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Pieterburenwad   WANTIJ  PW6 naar ZOL7- PW8</desc>  <sym>dry_1-0</sym> </wpt>
+<wpt lat="53.484831667" lon="6.659203333">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Ra  (Eemswadje)  Van de R4 naar R6</desc>  <sym>dry_1-5</sym> </wpt>
+<wpt lat="53.435793333" lon="5.7761">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Reegeul tot jachthaven (LeijeGat)  inloop in jachthaven,  MV = 22</desc>  <sym>depth_0-6</sym> </wpt>
+<wpt lat="53.348766667" lon="5.325">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Riepel       Van R4 naar R6</desc>  <sym>dry_0-4</sym> </wpt>
+<wpt lat="53.141486043" lon="5.170700653">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Scheurrak (rode zijde)  van de SO40 tot de SO42</desc>  <sym>depth_0-6</sym> </wpt>
+<wpt lat="53.141564979" lon="5.174867829">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Scheurrak/Omdraai  van de SO35 naar de SO43,  MV = 22</desc>  <sym>depth_0-6</sym> </wpt>
+<wpt lat="53.329098227" lon="5.158121164">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Schuitengat  drempel Schuitengat tussen SG2 en SG3,  MV = 25</desc>  <sym>depth_1-0</sym> </wpt>
+<wpt lat="53.466763333" lon="6.169998333">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Schiermonnikoog Reegeul   voor jachthaven</desc>  <sym>dry_1-1</sym> </wpt>
+<wpt lat="53.425173333" lon="6.029503333">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Smeriggat  tussen SG1 en SG3</desc>  <sym>dry_1-1</sym> </wpt>
+<wpt lat="53.451333333" lon="6.412808333">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Spruit  Van SP5 naar SP7</desc>  <sym>dry_0-7</sym> </wpt>
+<wpt lat="52.955594257" lon="5.075615338">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Vaarwater langs Afsluitdijk  AD5 naar AD6</desc>  <sym>depth_0-5</sym> </wpt>
+<wpt lat="53.136958333" lon="4.965976667">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Vaarwater naar de Cocksdorp  Wantij Z v Oostcardinaal kopbaken</desc>  <sym>dry_1-2</sym> </wpt>
+<wpt lat="53.03775739" lon="4.915108027">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Vaarwater over de Bollen  tussen B1 en B1a</desc>  <sym>depth_0-1</sym> </wpt>
+<wpt lat="53.356260816" lon="5.645978278">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Vaarwater v.d. Zwarte Haan  van VH22 naar VH26</desc>  <sym>dry_0-9</sym> </wpt>
+<wpt lat="53.1390001" lon="5.264102039">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Verversgat (Schuitenzand)   VVG16 naar de MR7-VVG18</desc>  <sym>depth_0-1</sym> </wpt>
+<wpt lat="53.320798333" lon="5.560636667">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Vingegat      WANTIJ  tussen V25 en V29</desc>  <sym>dry_1-0</sym> </wpt>
+<wpt lat="53.269495" lon="5.101763333">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Vlielanderbalg      VBSB4</desc>  <sym>dry_0-7</sym> </wpt>
+<wpt lat="53.267863161" lon="5.067180247">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Vliesloot               van de VS26 naar de VS34</desc>  <sym>depth_1-1</sym> </wpt>
+<wpt lat="52.97965424" lon="5.097998735">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Vlieter  van VL7 naar AD8-VL9</desc>  <sym>depth_1-0</sym> </wpt>
+<wpt lat="52.951728333" lon="5.002101667">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Wierbalg  van W13 naar W15</desc>  <sym>depth_0-1</sym> </wpt>
+<wpt lat="53.416796667" lon="6.014546667">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Wierumerwad  (van SG naar FW)  van WW7 naar WW7A</desc>  <sym>dry_1-1</sym> </wpt>
+<wpt lat="53.422636667" lon="6.04407">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Wierumerwad ( van PR naar SG)  tussen WW15 en WW19</desc>  <sym>dry_0-9</sym> </wpt>
+<wpt lat="53.479725" lon="6.632926667">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Zuid Oost Lauwers (Uithuizerwad)   WANTIJ  ZOL46 - ZOL50</desc>  <sym>dry_1-5</sym> </wpt>
+<wpt lat="53.424855" lon="5.903741667">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Zuider Spruit     van ZS31 naar ZS35</desc>  <sym>dry_0-9</sym> </wpt>
+<wpt lat="53.128555" lon="5.246766667">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Zuidoostrak  Wantij met kunststof sparboeien</desc>  <sym>dry_0-5</sym> </wpt>
+<wpt lat="53.137113333" lon="5.24872">  <extensions><opencpn:scale_min_max UseScale="true" ScaleMin="250000" /></extensions>
+ <desc>Zuidoostrak tot Molenrak  Tussen ZR15 en MR1/ZR22</desc>  <sym>dry_0-0</sym> </wpt>
+
+</gpx>
