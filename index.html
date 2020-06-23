@@ -31,11 +31,12 @@
   <body>
     <div id="map">
         <div class="leaflet-control-container">
-        <div class="leaflet-bottom leaflet-left" style="max-width:400px">
+        <div class="leaflet-bottom leaflet-left" style="max-width:400px" id="disclaimer-box">
             <div class="leaflet-control-layers leaflet-control-layers-expanded leaflet-control" aria-haspopup="true">
                 <a class="leaflet-control-layers-toggle" href="#" title="Layers"></a>
-                    <p class="leaflet-control-layers-label"><strong>Disclaimer</strong></p>
-                    <div class="leaflet-control-layers-separator"></div>
+                <p class="leaflet-control-layers-label"><strong>Disclaimer</strong><a style="float: right;" onclick="document.getElementById('disclaimer-box').outerHTML = '';">close</a>
+                </p>
+                <div class="leaflet-control-layers-separator"></div>
                     <span>Lodingen zijn niet te vertrouwen, het is verouderde data.</span></br>
                     <span>Locaties zijn niet exact. Deze geven enkel weer welke loding je zou kunnen opzoeken in een route.</span></br>
                     <span>Data komt van <a href="https://nautin.nl">Nautin</a> / <a href="https://wadvaarders.nl">Wadvaarders</a></span>
