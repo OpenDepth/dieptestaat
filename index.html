@@ -4,10 +4,14 @@
     <title>Dieptestaat</title>
 
     <style>
-    #map {
-        width: 100vw;
-        height: 100vh;
-    }
+    body {
+         padding: 0;
+         margin: 0;
+     }
+     html, body, #map {
+         height: 100%;
+         width: 100%;
+     }
     .leaflet-marker-icon {
         filter: drop-shadow(0px 0px 2px #000);
         }
@@ -16,6 +20,9 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css">
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js"></script>
+
+    <script src="https://dayjournal.github.io/Leaflet.Control.Opacity/plugin/Leaflet.Control.Opacity/dist/L.Control.Opacity.js"></script>
+    <link href="https://dayjournal.github.io/Leaflet.Control.Opacity/plugin/Leaflet.Control.Opacity/dist/L.Control.Opacity.css" rel="stylesheet" />
 
   </head>
   <body>
@@ -57,7 +64,7 @@ var overlayMaps = {
 };
 
 
-var control = L.control.layers(baseMaps, overlayMaps, {position: 'topleft'}).addTo(map);
+var control = L.control.layers(baseMaps, overlayMaps, {position: 'topright', collapsed: false}).addTo(map);
 
 // usericons: https://gofile.io/d/WphdsC
 // dieptestaat: https://gofile.io/d/9MgRKn
@@ -161,6 +168,13 @@ new L.GPX(gpxNautinLatCopy, {
             control.addOverlay(e.target, 'Dieptestaat LAT');
 });
 
+//OpacityControl
+L.control.opacity(
+    overlayMaps,
+    {
+    label: "Layers Opacity"
+    }
+).addTo(map);
 // ,
 //        shadowUrl: 'http://github.com/mpetazzoni/leaflet-gpx/raw/master/pin-shadow.png'
   </script>
