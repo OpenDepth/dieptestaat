@@ -49,7 +49,8 @@ var map = L.map('map', {
 var geonames = L.tileLayer.wms('https://inspire.caris.nl/geoserver/gnwms/ows?',
   {layers: 'GN.GeographicalNames',
 format: 'image/PNG',
-transparent: true
+transparent: true,
+opacity: 0.4
 }).addTo(map);
 
 var OpenSeaMap = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png').addTo(map);
