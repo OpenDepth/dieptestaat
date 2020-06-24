@@ -52,6 +52,12 @@
 
 var brt = L.tileLayer('https://geodata.nationaalgeoregister.nl/tiles/service/wmts/brtachtergrondkaart/EPSG:3857/{z}/{x}/{y}.png');
 
+var ir = L.tileLayer.wms('https://geodata.nationaalgeoregister.nl/luchtfoto/infrarood/wms?',
+  {layers: 'Actueel_ortho25IR',
+  format: 'image/PNG',
+transparent: true
+})
+
 var foto = L.tileLayer('https://geodata.nationaalgeoregister.nl/luchtfoto/rgb/wmts/Actueel_ortho25/EPSG:3857/{z}/{x}/{y}.png');
 
 var flytovector = L.tileLayer('https://viewer.flytomap.com/ftm_tiles/{z}/{x}/{y}.png');
@@ -70,10 +76,13 @@ transparent: true,
 opacity: 0.4
 }).addTo(map);
 
+
+
 var OpenSeaMap = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png').addTo(map);
 
 
 var baseMaps = {
+    "Infrarood": ir,
   "Foto": foto,
   "Kaart": brt,
   "Nav": flytovector
