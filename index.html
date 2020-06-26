@@ -27,6 +27,10 @@
     <script src="https://dayjournal.github.io/Leaflet.Control.Opacity/plugin/Leaflet.Control.Opacity/dist/L.Control.Opacity.js"></script>
     <link href="https://dayjournal.github.io/Leaflet.Control.Opacity/plugin/Leaflet.Control.Opacity/dist/L.Control.Opacity.css" rel="stylesheet" />
 
+    <script src="https://unpkg.com/sql.js@0.3.2/js/sql.js"></script>
+    <script src="http://ivansanchez.gitlab.io/Leaflet.TileLayer.MBTiles/Leaflet.TileLayer.MBTiles.js"></script>
+
+
   </head>
   <body>
     <div id="map">
@@ -76,6 +80,9 @@ transparent: true,
 opacity: 0.4
 }).addTo(map);
 
+var nautinAlti1 = '../dieptestaat/data/altimetrie/Wad1.mbtiles'
+var wad_1 = L.tileLayer.mbTiles(nautinAlti1);
+
 
 
 var OpenSeaMap = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png').addTo(map);
@@ -90,7 +97,8 @@ var baseMaps = {
 
 var overlayMaps = {
   "Geographical names": geonames,
-      "OpenSeaMap": OpenSeaMap
+      "OpenSeaMap": OpenSeaMap,
+      "Wad 1": wad_1
 };
 
 
