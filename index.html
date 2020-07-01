@@ -120,9 +120,10 @@ var control = L.control.layers(baseMaps, overlayMaps, {position: 'topright', col
 var depthIcons = '../dieptestaat/UserIconsDepth/depth_'
 var dryIcons = '../dieptestaat/UserIconsDepth/dry_'
 var gpxUpload = 'https://srv-file5.gofile.io/download/9MgRKn/DieptestaatLayerNAP_original.gpx'
-var gpxNautinNap = 'http://nautin.nl/downloads/opencpn/layers/NautinDieptesNAP.gpx'
-var gpxNautinNapCopy = '../dieptestaat/data/NautinDieptesNAP.gpx'
-var gpxNautinLatCopy = '../dieptestaat/data/NautinDieptesLAT.gpx'
+var gpxNautinNap = 'https://cors-anywhere.herokuapp.com/http://nautin.nl/downloads/opencpn/layers/NautinDieptesNAP.gpx'
+var gpxNautinLat = 'https://cors-anywhere.herokuapp.com/http://nautin.nl/downloads/opencpn/layers/NautinDieptesLAT.gpx'
+// var gpxNautinNapCopy = '../dieptestaat/data/NautinDieptesNAP.gpx'
+// var gpxNautinLatCopy = '../dieptestaat/data/NautinDieptesLAT.gpx'
 
 var icons = {
     '': 'https://unpkg.com/leaflet@1.6.0/dist/images/marker-icon.png',
@@ -198,7 +199,7 @@ var icons = {
     'dry_2-9': dryIcons + '2-9' + '.png'
 }
 
-new L.GPX(gpxNautinNapCopy, {
+new L.GPX(gpxNautinNap, {
         async: true,
         marker_options: {
             wptIconUrls: icons
@@ -207,7 +208,7 @@ new L.GPX(gpxNautinNapCopy, {
             control.addOverlay(e.target, 'Dieptestaat NAP');
 }).addTo(map);
 
-new L.GPX(gpxNautinLatCopy, {
+new L.GPX(gpxNautinLat, {
         async: true,
         marker_options: {
             wptIconUrls: icons
