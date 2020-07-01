@@ -1,0 +1,10 @@
+{
+    "name": "Waddenzee", 
+    "format": "png", 
+    "bounds": "4.545963166888987,52.880155882373764,5.238426447931216,53.312838439316714", 
+    "minZoom": "7", 
+    "version": "1.1", 
+    "maxZoom": "14", 
+    "type": "baselayer", 
+    "description": "Created with QTiles"
+}

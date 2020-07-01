@@ -80,12 +80,13 @@ transparent: true,
 opacity: 0.4
 }).addTo(map);
 
-var wad_1 = L.tileLayer.mbTiles("../dieptestaat/data/altimetrie/Wad1.mbtiles");
-var wad_2 = L.tileLayer.mbTiles("../dieptestaat/data/altimetrie/Wad2.mbtiles");
-var wad_3 = L.tileLayer.mbTiles("../dieptestaat/data/altimetrie/Wad3.mbtiles");
-var wad_4 = L.tileLayer.mbTiles("../dieptestaat/data/altimetrie/Wad4.mbtiles");
+// var wad_1 = L.tileLayer.mbTiles("../dieptestaat/data/altimetrie/Wad1.mbtiles");
+// var wad_2 = L.tileLayer.mbTiles("../dieptestaat/data/altimetrie/Wad2.mbtiles");
+// var wad_3 = L.tileLayer.mbTiles("../dieptestaat/data/altimetrie/Wad3.mbtiles");
+// var wad_4 = L.tileLayer.mbTiles("../dieptestaat/data/altimetrie/Wad4.mbtiles");
 var wad_data = L.tileLayer.mbTiles("../dieptestaat/data/altimetrie/Wad_data.mbtiles");
 
+var wad_tiles = L.tileLayer('../dieptestaat/data/altimetiles/{z}/{x}/{y}.png');
 
 
 var OpenSeaMap = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png').addTo(map);
@@ -99,10 +100,11 @@ var baseMaps = {
   };
 
 var overlayMaps = {
-    "Wad 1": wad_1,
-    "Wad 2": wad_2,
-    "Wad 3": wad_3,
-    "Wad 4": wad_4,
+    "Wad Altimetrie": wad_tiles,
+    // "Wad 1": wad_1,
+    // "Wad 2": wad_2,
+    // "Wad 3": wad_3,
+    // "Wad 4": wad_4,
     "Wad Data": wad_data,
 
   "Geographical names": geonames,
